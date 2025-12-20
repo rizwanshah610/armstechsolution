@@ -3,78 +3,121 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Armstechsolution | IT & AI Solutions Company</title>
-  <meta name="description" content="Armstechsolution provides software development, mobile apps, AI digital marketing, chatbot development, and AI automation services.">
+  <title>Armstechsolution | AI & IT Solutions</title>
+  <meta name="description" content="Armstechsolution provides software development, app development, AI digital marketing, AI chatbot, and AI agent automation solutions.">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    /* Simple fade-in for hero text */
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+  </style>
 </head>
-
 <body class="bg-gray-50 text-gray-800">
 
-<!-- Header -->
-<header class="bg-white shadow-md">
-  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-600">Armstechsolution</h1>
-    <nav class="space-x-6 font-medium">
-      <a href="index.html" class="text-blue-600">Home</a>
-      <a href="services.html" class="hover:text-blue-600">Services</a>
-      <a href="about.html" class="hover:text-blue-600">About</a>
-      <a href="contact.html" class="hover:text-blue-600">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero -->
-<section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white py-20">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-4xl md:text-5xl font-bold mb-6">
-      Innovative IT & AI Solutions for Your Business
-    </h2>
-    <p class="text-lg max-w-2xl mx-auto mb-8">
-      We build intelligent software, mobile apps, AI automation, and digital marketing solutions that help businesses grow.
-    </p>
-    <a href="services.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100">
-      Explore Services
-    </a>
+<!-- HERO SECTION -->
+<section class="relative h-screen overflow-hidden">
+  <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
+    <source src="https://cdn.pixabay.com/vimeo/601843237/abstract-tech.mp4" type="video/mp4">
+  </video>
+  <div class="relative z-10 bg-black/60 h-full flex flex-col justify-center items-center text-center px-6">
+    <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 fade-in">Armstechsolution</h1>
+    <p class="text-xl md:text-2xl text-white mb-6 fade-in">AI & IT Solutions for Software, Apps & Digital Marketing</p>
+    <a href="#contact" class="bg-green-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-green-600 transition">Contact Us</a>
   </div>
 </section>
 
-<!-- Services Preview -->
-<section class="py-16">
+<!-- SERVICES SECTION -->
+<section class="py-20 bg-gray-100" id="services">
   <div class="max-w-7xl mx-auto px-6">
-    <h3 class="text-3xl font-bold text-center mb-12">Our Core Services</h3>
-
+    <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Services</h2>
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-3">Software Development</h4>
-        <p>Custom, scalable, and secure software solutions tailored to your business needs.</p>
+      <div class="bg-white rounded-xl shadow p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-bold mb-2">Software Development</h3>
+        <p class="text-gray-600">Custom software solutions for businesses of any size.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-3">Mobile App Development</h4>
-        <p>High-performance Android and iOS applications with modern UI/UX.</p>
+      <div class="bg-white rounded-xl shadow p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-bold mb-2">Mobile App Development</h3>
+        <p class="text-gray-600">iOS & Android apps with modern design and functionality.</p>
       </div>
-
-      <div class="bg-white p-6 rounded-xl shadow">
-        <h4 class="text-xl font-semibold mb-3">AI Solutions</h4>
-        <p>AI chatbots, agents, automation, and data-driven digital marketing strategies.</p>
+      <div class="bg-white rounded-xl shadow p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-bold mb-2">AI Digital Marketing</h3>
+        <p class="text-gray-600">Intelligent marketing solutions using AI tools and analytics.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-center" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-xl font-bold mb-2">AI Chatbot Development</h3>
+        <p class="text-gray-600">Customer support automation using smart AI chatbots.</p>
+      </div>
+      <div class="bg-white rounded-xl shadow p-6 text-center" data-aos="fade-up" data-aos-delay="500">
+        <h3 class="text-xl font-bold mb-2">AI Agent Automation</h3>
+        <p class="text-gray-600">Automate business workflows with AI agents.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
-<section class="bg-blue-600 text-white py-16 text-center">
-  <h3 class="text-3xl font-bold mb-4">Ready to Transform Your Business?</h3>
-  <p class="mb-6">Partner with Armstechsolution for future-ready technology solutions.</p>
-  <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold">
-    Contact Us
-  </a>
+<!-- PORTFOLIO SECTION -->
+<section class="py-20" id="portfolio">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Portfolio</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="rounded-xl overflow-hidden shadow" data-aos="zoom-in" data-aos-delay="100">
+        <img src="https://source.unsplash.com/400x300/?software" alt="Software Project" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Software Platform</h3>
+          <p class="text-gray-600 text-sm">Custom business software.</p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow" data-aos="zoom-in" data-aos-delay="200">
+        <img src="https://source.unsplash.com/400x300/?app" alt="App Project" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">Mobile App</h3>
+          <p class="text-gray-600 text-sm">iOS & Android application.</p>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden shadow" data-aos="zoom-in" data-aos-delay="300">
+        <img src="https://source.unsplash.com/400x300/?AI,technology" alt="AI Project" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="font-bold text-lg">AI Chatbot</h3>
+          <p class="text-gray-600 text-sm">Customer support automation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<!-- Footer -->
+<!-- CONTACT SECTION -->
+<section class="py-20 bg-gray-100" id="contact">
+  <div class="max-w-3xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-8" data-aos="fade-up">Contact Us</h2>
+    <form action="https://formsubmit.co/rizwanshah610@gmail.com" method="POST" class="bg-white p-8 rounded-xl shadow space-y-4" data-aos="fade-up" data-aos-delay="100">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="name" placeholder="Your Name" required class="w-full border p-3 rounded">
+      <input type="email" name="email" placeholder="Your Email" required class="w-full border p-3 rounded">
+      <textarea name="message" placeholder="Your Message" rows="5" required class="w-full border p-3 rounded"></textarea>
+      <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded font-semibold hover:bg-blue-700">Send Message</button>
+    </form>
+    <div class="mt-6 text-center text-gray-700" data-aos="fade-up" data-aos-delay="200">
+      <p>Email: <a href="mailto:rizwanshah610@gmail.com" class="text-blue-600">rizwanshah610@gmail.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/923076400075" class="text-green-600 font-semibold">+92 307 6400075</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer class="bg-gray-900 text-gray-300 py-6 text-center">
   <p>© 2025 Armstechsolution. All Rights Reserved.</p>
 </footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
