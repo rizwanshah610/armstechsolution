@@ -120,33 +120,111 @@
       What Clients Say
     </h2>
 
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up">
-        <p class="text-gray-600 mb-4">
-          “Armstechsolution transformed our business with AI automation.”
-        </p>
-        <h4 class="font-bold">Sarah Johnson</h4>
-        <span class="text-sm text-gray-500">USA – E-commerce Owner</span>
-      </div>
+    <!-- Slider Wrapper -->
+    <div class="relative overflow-hidden max-w-3xl mx-auto">
+      <div id="testimonialSlider" class="flex transition-transform duration-700">
 
-      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="100">
-        <p class="text-gray-600 mb-4">
-          “Excellent communication and top-quality development work.”
-        </p>
-        <h4 class="font-bold">Ahmed Khan</h4>
-        <span class="text-sm text-gray-500">Startup Founder</span>
-      </div>
+        <!-- Testimonial 1 -->
+        <div class="min-w-full px-4">
+          <div class="bg-white p-8 rounded-xl shadow text-center"
+               itemscope itemtype="https://schema.org/Review">
 
-      <div class="bg-white p-6 rounded-xl shadow" data-aos="fade-up" data-aos-delay="200">
-        <p class="text-gray-600 mb-4">
-          “Their AI marketing strategy boosted our sales significantly.”
-        </p>
-        <h4 class="font-bold">Michael Lee</h4>
-        <span class="text-sm text-gray-500">Marketing Director</span>
+            <img src="assets/testimonials/client1.jpg"
+                 onerror="this.src='assets/testimonials/avatar.png'"
+                 alt="Sarah Johnson"
+                 class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-gray-200">
+
+            <!-- Stars -->
+            <div class="flex justify-center mb-3 text-xl">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+            </div>
+
+            <p class="text-gray-600 mb-4" itemprop="reviewBody">
+              “Armstechsolution transformed our business with AI automation.”
+            </p>
+
+            <h4 class="font-bold" itemprop="author">Sarah Johnson</h4>
+            <span class="text-sm text-gray-500">USA – E-commerce Owner</span>
+
+            <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="min-w-full px-4">
+          <div class="bg-white p-8 rounded-xl shadow text-center"
+               itemscope itemtype="https://schema.org/Review">
+
+            <img src="assets/testimonials/client2.jpg"
+                 onerror="this.src='assets/testimonials/avatar.png'"
+                 alt="Ahmed Khan"
+                 class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-gray-200">
+
+            <!-- Stars -->
+            <div class="flex justify-center mb-3 text-xl">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+            </div>
+
+            <p class="text-gray-600 mb-4" itemprop="reviewBody">
+              “Excellent communication and top-quality development work.”
+            </p>
+
+            <h4 class="font-bold" itemprop="author">Ahmed Khan</h4>
+            <span class="text-sm text-gray-500">Startup Founder</span>
+
+            <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="min-w-full px-4">
+          <div class="bg-white p-8 rounded-xl shadow text-center"
+               itemscope itemtype="https://schema.org/Review">
+
+            <img src="assets/testimonials/client3.jpg"
+                 onerror="this.src='assets/testimonials/avatar.png'"
+                 alt="Michael Lee"
+                 class="w-20 h-20 rounded-full mx-auto mb-4 object-cover border-4 border-gray-200">
+
+            <!-- Stars -->
+            <div class="flex justify-center mb-3 text-xl">
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+              <span class="text-yellow-500">★</span>
+            </div>
+
+            <p class="text-gray-600 mb-4" itemprop="reviewBody">
+              “Their AI marketing strategy boosted our sales significantly.”
+            </p>
+
+            <h4 class="font-bold" itemprop="author">Michael Lee</h4>
+            <span class="text-sm text-gray-500">Marketing Director</span>
+
+            <meta itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content="5">
+            <meta itemprop="bestRating" content="5">
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 </section>
+
 
 <!-- PARTNERS -->
 <section class="py-20 bg-white" id="partners">
@@ -193,5 +271,20 @@
   AOS.init({ duration: 1000, once: true });
 </script>
 
+  <!-- Testimonial Auto Slider Js -->
+
+  <script>
+  const slider = document.getElementById('testimonialSlider');
+  let index = 0;
+  const totalSlides = 3;
+
+  setInterval(() => {
+    index = (index + 1) % totalSlides;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+
 </body>
 </html>
+
