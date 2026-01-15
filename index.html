@@ -225,20 +225,46 @@
 
 
 <!-- PARTNERS -->
+<!-- PARTNERS -->
 <section class="py-20 bg-white" id="partners">
   <div class="max-w-7xl mx-auto px-6">
     <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">
       Our Partners
     </h2>
 
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
-      <img src="assets/partners/partner1.png" class="mx-auto h-16 grayscale hover:grayscale-0 transition">
-      <img src="assets/partners/partner2.png" class="mx-auto h-16 grayscale hover:grayscale-0 transition">
-      <img src="assets/partners/partner3.png" class="mx-auto h-16 grayscale hover:grayscale-0 transition">
-      <img src="assets/partners/partner4.png" class="mx-auto h-16 grayscale hover:grayscale-0 transition">
+    <!-- Swiper Slider -->
+    <div class="swiper partnersSwiper">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner1.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 1">
+        </div>
+
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner2.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 2">
+        </div>
+
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner3.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 3">
+        </div>
+
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner4.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 4">
+        </div>
+
+        <!-- Repeat logos if you want infinite scroll -->
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner1.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 1">
+        </div>
+        <div class="swiper-slide flex justify-center items-center">
+          <img src="assets/partners/partner2.png" class="h-16 grayscale hover:grayscale-0 transition" alt="Partner 2">
+        </div>
+
+      </div>
     </div>
   </div>
 </section>
+
 
 <!-- CONTACT -->
 <section class="py-20 bg-gray-100" id="contact">
@@ -302,8 +328,28 @@
 </script>
 
 
+  <!-- Partners Section Logo Slider Js -->
+
+  <script>
+  new Swiper(".partnersSwiper", {
+    slidesPerView: 2,           // logos visible on small screens
+    spaceBetween: 30,
+    loop: true,
+    autoplay: {
+      delay: 2000,              // auto scroll speed
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: { slidesPerView: 3 },
+      1024: { slidesPerView: 4 },
+    },
+  });
+</script>
+
+
 
 </body>
 </html>
+
 
 
